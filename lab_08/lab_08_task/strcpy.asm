@@ -18,7 +18,7 @@ not_equal : ; строки не перекрываются
     cmp edi, esi; edi < esi == dst < src
 	jl copy
 
-	mov eax, ediыЫыы
+	mov eax, edi
 	sub eax, esi
 
 	cmp eax, ecx
