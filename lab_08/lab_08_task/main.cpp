@@ -30,6 +30,9 @@ size_t asm_strlen(const char* str)
 		xor al, al;
 		while_not_end:
 			inc ecx;
+/* Команда SCASB сравнивает регистр AL с байтом в ячейке памяти по адресу ES:DI 
+и устанавливает флаги аналогично команде CMP. После выполнения команды, 
+ регистр DI увеличивается на 1, если флаг DF = 0, или уменьшается на 1, если DF = 1. */            
 			scasb;
 			jne while_not_end
 		dec ecx;
