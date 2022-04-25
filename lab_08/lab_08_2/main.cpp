@@ -1,3 +1,7 @@
+// пример 2 
+
+#include <iostream>
+
 extern "C"
 {
 	void testAsm(); // подключение в код на Си/Си++ функции
