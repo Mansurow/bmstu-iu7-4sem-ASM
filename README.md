@@ -12,8 +12,8 @@ bmstu, Machine-dependent programming languages (4 семестр - 2022 год)
 | 5 | [Матрицы](https://github.com/Mansurow/bmstu_asm/tree/master/lab_05) |:white_check_mark: |
 | 6 | [Обработка чисел](https://github.com/Mansurow/bmstu_asm/tree/master/lab_06) |:white_check_mark: |
 | 7 | [Перехват прерываний. Резидентные программы.Ввод-вывод через порты](https://github.com/Mansurow/bmstu_asm/tree/master/lab_07) |:white_check_mark: |
-| 8 |  |:white_large_square: |
-| 9 |  |:white_large_square: |
-| 10 |  |:white_large_square: |
+| 8 | [Программирование под x86/x86-64. Обработка строк](https://github.com/Mansurow/bmstu_asm/tree/master/lab_08) |:white_check_mark: |
+| 9 | [Математический сопроцессор](https://github.com/Mansurow/bmstu_asm/tree/master/lab_09) |:white_large_square: |
+| 10 | [Streaming SIMD Extensions (SSE), Advanced Vector Extensions (AVX)](https://github.com/Mansurow/bmstu_asm/tree/master/lab_10) |:white_large_square: |
 | 11 |  |:white_large_square: |
 | 12 |  |:white_large_square: |
