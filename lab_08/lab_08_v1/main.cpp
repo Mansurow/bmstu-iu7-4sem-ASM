@@ -22,7 +22,8 @@ size_t my_strlen(const char* str)
 size_t asm_strlen(const char* str)
 {
 	size_t len = 0;
-	__asm {
+//  версия 0.1 заключается в счетчике в цикле
+/*	__asm {
 		push ecx;
 		push edi;
 		xor ecx, ecx;
@@ -30,17 +31,50 @@ size_t asm_strlen(const char* str)
 		xor al, al;
 		while_not_end:
 			inc ecx;
-/* Команда SCASB сравнивает регистр AL с байтом в ячейке памяти по адресу ES:DI 
+ Команда SCASB сравнивает регистр AL с байтом в ячейке памяти по адресу ES:DI 
 и устанавливает флаги аналогично команде CMP. После выполнения команды, 
- регистр DI увеличивается на 1, если флаг DF = 0, или уменьшается на 1, если DF = 1. */            
+ регистр DI увеличивается на 1, если флаг DF = 0, или уменьшается на 1, если DF = 1.           
 			scasb;
 			jne while_not_end
 		dec ecx;
 		mov len, ecx;
 		pop edi;
 		pop ecx;
+	} */
+ 
+// версия 0.2 заключается в том что сx устанавливается самое большое значение 
+/*    __asm {
+		push ecx;
+		push edi;
+		xor ecx, -1;
+		mov edi, str;
+		xor al, al;
+		while_not_end:        
+			scasb;
+			loopne while_not_end
+		not ecx;
+        dec ecx;
+		mov len, ecx;
+		pop edi;
+		pop ecx;
 	}
-
+ */
+// версия с использование 0.2 версии но вместо цикла используем repne
+// более подходящая для сдачи
+    __asm {
+		push ecx;
+		push edi;
+		mov ecx, -1;
+		mov edi, str;
+		xor al, al;
+		repne scasb
+	    not ecx;
+		dec ecx;
+		mov len, ecx;
+		pop edi;
+		pop ecx;
+	}
+    
 	return len;
 }
 
