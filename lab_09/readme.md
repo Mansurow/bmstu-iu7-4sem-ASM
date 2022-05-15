@@ -2,9 +2,9 @@
 
 - lab_09_VS - реализация для Visual Studio с ассамблеской вставкой `__asm`
 
-PS: не разоблася как там работать со сопроцессором SSE и FPU. Также сборку смотри [lab_08](https://github.com/Mansurow/bmstu_asm/edit/master/lab_08)
+PS: В Visual Studio не разоблася как там работать со сопроцессором SSE и FPU. Также сборку смотри [lab_08](https://github.com/Mansurow/bmstu_asm/edit/master/lab_08)
 
-- lab_08_MF - реализация, используя `makefile`.
+- lab_09_MF - реализация, используя `makefile`.
 ## Задание 
 
 1. Изучить скорость выполнения операций над вещественными числами на
