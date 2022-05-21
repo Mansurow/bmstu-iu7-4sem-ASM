@@ -1,0 +1,1 @@
+del main.exe main.obj

@@ -15,9 +15,9 @@ using namespace std;
 void cout_time(clock_t time, const char* action)
 {
     if (time >= 1000)
-        cout << "   " << action << ": " << ((double)time) / CLOCKS_PER_SEC / TIMES << " s.";
+        cout << "   " << action << ": " << ((double)time) / CLOCKS_PER_SEC << " s.";
     else
-        cout << "   " << action << ": " << ((double)time) / TIMES << " ms.";
+        cout << "   " << action << ": " << ((double)time) << " ms.";
 }
 
 
@@ -220,14 +220,14 @@ void time_measure(Type a, Type b)
     printf(PRESION, "  ", a, "/", b, div_asm(a, b));
     printf(PRESION, "  ", a, "/", b, div(a, b));*/
 
-    #ifdef AASM
-    // cout << "   ASM:";
+    #ifdef ASM
+    cout << "   ASM:";
     sum_asm(a, b);
     mul_asm(a, b);
     sub_asm(a, b);
     div_asm(a, b);
     #else
-    //cout << "   CPP:";
+    cout << "   CPP:";
     sum(a, b);
     mul(a, b);
     sub(a, b);
