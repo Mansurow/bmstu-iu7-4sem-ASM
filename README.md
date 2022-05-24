@@ -15,5 +15,5 @@ bmstu, Machine-dependent programming languages (4 семестр - 2022 год)
 | 8 | [Программирование под x86/x86-64. Обработка строк](https://github.com/Mansurow/bmstu_asm/tree/master/lab_08) |:white_check_mark: |
 | 9 | [Математический сопроцессор](https://github.com/Mansurow/bmstu_asm/tree/master/lab_09) |:white_check_mark: |
 | 10 | [Streaming SIMD Extensions (SSE), Advanced Vector Extensions (AVX)](https://github.com/Mansurow/bmstu_asm/tree/master/lab_10) |:white_check_mark: |
-| 11 | [Программа с графическим интерфейсом пользователя](https://github.com/Mansurow/bmstu_asm/tree/master/lab_11) |:white_large_square: |
+| 11 | [Программа с графическим интерфейсом пользователя](https://github.com/Mansurow/bmstu_asm/tree/master/lab_11) |:white_check_mark: |
 | 12 | [Низкоуровневое программирование под Windows/Linux. Дизассемблирование. Реверс-инжиниринг](https://github.com/Mansurow/bmstu_asm/tree/master/lab_12) |:white_check_mark: |
