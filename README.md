@@ -4,7 +4,7 @@ bmstu, Machine-dependent programming languages (4 семестр - 2022 год)
 ```
 
 **Совет:**
-Если что-то не понятно, то заглядывайте в книге Зубкова "Assembler для DOS, Windows и UNIX"
+Если что-то не понятно, то заглядывайте в книге [Зубкова "Assembler для DOS, Windows и UNIX"](https://drive.google.com/drive/u/0/folders/1JhUWIvbGOkKibb8jjnYgjtrkeRa58e88)
 Там достаточно подробно все раскрыто и много примеров.
 
 | Lab № | Название | Status |
